@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>11-GAMING.COM // Mission Control</title>
+<meta name="description" content="11's personal corner of the internet — games, space, and art.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanlines" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="boot-screen" id="bootScreen" aria-hidden="true">
+  <p class="boot-line" id="bootText"></p>
+</header>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">// PLAYER PROFILE LOADED</p>
+    <h1 class="logo">11-GAMING<span class="blink">_</span></h1>
+    <p class="tagline">Games. Space. Art. My corner of the internet.</p>
+  </div>
+  <nav class="level-select" aria-label="Site sections">
+    <a href="#games" class="level-tile" data-tile="games">
+      <span class="level-num">LVL 01</span>
+      <span class="level-name">GAMES</span>
+    </a>
+    <a href="#space" class="level-tile" data-tile="space">
+      <span class="level-num">LVL 02</span>
+      <span class="level-name">SPACE</span>
+    </a>
+    <a href="#art" class="level-tile" data-tile="art">
+      <span class="level-num">LVL 03</span>
+      <span class="level-name">ART</span>
+    </a>
+  </nav>
+  <div class="scroll-hint" aria-hidden="true">▼ scroll ▼</div>
+</header>
+
+<main id="main">
+
+  <!-- GAMES -->
+  <section id="games" class="panel">
+    <div class="panel-head">
+      <span class="panel-tag">LVL 01</span>
+      <h2>Games I'm Into</h2>
+      <p class="panel-sub">Edit <code>js/main.js</code> to add your own — see the GAMES list.</p>
+    </div>
+    <div class="cart-grid" id="gameGrid"></div>
+  </section>
+
+  <!-- SPACE -->
+  <section id="space" class="panel panel-space">
+    <div class="panel-head">
+      <span class="panel-tag">LVL 02</span>
+      <h2>Space Report</h2>
+      <p class="panel-sub">Tap the planet for a new fact from mission control.</p>
+    </div>
+
+    <div class="space-console">
+      <button class="planet" id="planetBtn" aria-label="Get a new space fact">
+        <span class="planet-ring"></span>
+      </button>
+
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="terminal-title">fact_log.txt</span>
+        </div>
+        <p class="terminal-line"><span class="prompt">&gt;</span> <span id="factText">Tap the planet to receive transmission...</span><span class="blink cursor">_</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ART -->
+  <section id="art" class="panel">
+    <div class="panel-head">
+      <span class="panel-tag">LVL 03</span>
+      <h2>Art Gallery</h2>
+      <p class="panel-sub">Drop image files into the <code>/art</code> folder and list them in <code>js/main.js</code> to fill these frames.</p>
+    </div>
+    <div class="gallery-grid" id="artGrid"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Built by 11 · Last updated <span id="lastUpdated"></span> · Powered by GitHub Pages</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
