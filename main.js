@@ -10,8 +10,7 @@
    Unlisted videos work fine — they just won't show up
    in YouTube search, only to people with the link.
 --------------------------------------------------- */
-const VIDEOS = [
-  { url: https://youtube.com/shorts/Q9aQDzqq5Xc?si=iYAVg6FQ2hDvCeO8, title:5th Birthday },
+const VIDEOS = [{ url: "https://youtube.com/shorts/Q9aQDzqq5Xc?si=iYAVg6FQ2hDvCeO8", title: "5th Birthday" },
 ];
 
 /* ---------------------------------------------------
