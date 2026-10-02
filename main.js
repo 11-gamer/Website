@@ -11,7 +11,7 @@
    in YouTube search, only to people with the link.
 --------------------------------------------------- */
 const VIDEOS = [
-  { url: "", title: "Add a video link here" },
+  { url: https://youtube.com/shorts/Q9aQDzqq5Xc?si=vdNyEnTUdzoy1fDi},
 ];
 
 /* ---------------------------------------------------
